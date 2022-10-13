@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Space+Mono&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&family=Space+Mono&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/output.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -16,7 +16,7 @@
 </head>
 
 <body class="relative overflow-x-hidden text-white bg-gray-900 selection:bg-indigo-300/25">
-    <header class="mx-auto mb-40 max-w-7xl">
+    <header class="min-h-screen mx-auto max-w-7xl">
 
         <!-- Navbar -->
         <nav class="bg-gray-900" x-data="{ open: false }">
@@ -91,7 +91,7 @@
             </div>
 
             <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="bg-gray-800" id="mobile-menu" x-show="open" @click.outside="open = false">
+            <div class="bg-gray-900" id="mobile-menu" x-show="open" @click.outside="open = false">
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <a href="#about"
@@ -118,93 +118,144 @@
             </div>
         </nav>
         <!-- hero -->
-        <div class="max-w-6xl px-6 mx-auto mt-8 sm:px-10 md:px-14">
+        <div class="max-w-6xl mx-auto mt-8">
             <div class="">
-                <p class="font-mono text-lg text-indigo-500 ">
-                    Hi, my name is 👋
-                </p>
-                <div class="py-4 space-y-4 leading-loose">
-                    <h1 class="text-5xl font-semibold tracking-wider text-gray-300 sm:text-7xl md:text-8xl">
-                        InayatUllah.
-                    </h1>
-                    <h1 class="text-5xl font-semibold tracking-wide text-gray-400 sm:text-7xl md:text-8xl">
-                        I built for the web.
-                    </h1>
-                </div>
-                <div class="max-w-2xl">
-                    <p class="text-base font-medium leading-7 text-gray-300 sm:text-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae harum temporibus iste
-                        dolores nobis deserunt, expedita corporis laboriosam quisquam doloremque obcaecati in aliquam
+                <div class="">
+                    <p class="font-mono text-lg text-indigo-500 ">
+                        Hi, my name is 👋
                     </p>
+                    <div class="py-4 space-y-4 leading-loose">
+                        <h1 class="text-5xl font-semibold tracking-wider text-gray-300 sm:text-7xl md:text-8xl">
+                            InayatUllah.
+                        </h1>
+                        <h1 class="text-5xl font-semibold tracking-wide text-gray-400 sm:text-7xl md:text-8xl">
+                            I built for the web.
+                        </h1>
+                    </div>
+                    <div class="max-w-2xl">
+                        <p class="text-base font-normal leading-7 text-gray-300 sm:text-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae harum temporibus
+                            iste
+                            dolores nobis deserunt, expedita corporis laboriosam quisquam doloremque obcaecati in
+                            aliquam
+                        </p>
+                    </div>
+                    <div class="mt-10 space-y-8 sm:space-y-0 sm:flex sm:space-x-4 sm:flex-row">
+                        <a href="#"
+                            class="block px-4 py-3 font-mono text-base font-bold text-center capitalize bg-indigo-500 border border-indigo-500 rounded-md sm:inline-block hover:bg-indigo-400"
+                            onclick="alert('Portfolio is Under Construction!')">
+                            download resume
+                        </a>
+                        <a href=" #"
+                            class="block px-4 py-3 font-mono text-base font-bold text-center text-indigo-500 capitalize border border-indigo-500 rounded-md sm:inline-block hover:bg-indigo-300/25 hover:text-indigo-600"
+                            onclick="alert('Portfolio is Under Construction!')">
+                            contact
+                        </a>
+                    </div>
                 </div>
-                <div class="mt-10 space-y-8 sm:space-y-0 sm:flex sm:space-x-4 sm:flex-row">
-                    <a href="#"
-                        class="block px-4 py-3 font-mono text-base font-bold text-center capitalize bg-indigo-500 border border-indigo-500 rounded-md sm:inline-block hover:bg-indigo-400"
-                        onclick="alert('Portfolio is Under Construction!')">
-                        download resume
-                    </a>
-                    <a href=" #"
-                        class="block px-4 py-3 font-mono text-base font-bold text-center text-indigo-500 capitalize border border-indigo-500 rounded-md sm:inline-block hover:bg-indigo-300/25 hover:text-indigo-600"
-                        onclick="alert('Portfolio is Under Construction!')">
-                        contact
-                    </a>
-                </div>
+                <!-- <div class="-mr-20">
+                    <img class="z-10 max-w-md" src="media/programming.svg" alt="">
+                </div> -->
             </div>
-            <!-- <div class="">
-            <img src="../media/img/InayatUllah.jpg" alt="" class="w-40 h-40 rounded-full">
-        </div> -->
         </div>
 
     </header>
 
 
-    <main class="max-w-6xl py-8 mx-auto">
+    <main class="px-10 py-8 mx-auto mt-20 space-y-52 max-w-7xl md:px-20">
         <!-- About -->
-        <section id="about" class="flex flex-col px-8 pt-10 pb-12 sm:flex-row sm:justify-between">
+        <section id="about" class="flex flex-col gap-6 scroll-m-20 sm:flex-row sm:justify-between">
             <h2
-                class="text-4xl pb-10 flex-shrink-0 font-bold  text-center capitalize before:content-['01.'] before:text-indigo-500 before:-mr-2 text-gray-300   font-mono mr-3 ">
+                class="text-5xl pb-10 flex-shrink-0 font-bold  text-center capitalize before:content-['01.'] before:text-indigo-500 before:text-3xl before:-mr-6 text-gray-300 font-mono">
                 About
             </h2>
-            <div class="flex-grow max-w-2xl text-base font-light leading-loose text-gray-300 sm:text-lg">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas repellendus quo omnis officiis harum
-                consequatur maiores eum autem dolor aut sequi error vel, doloribus illo distinctio neque? Possimus odit
-                quas quaerat! Aut in tempore culpa ipsam ex dignissimos eveniet ab totam et consectetur nemo dolorem
-                blanditiis, voluptates id fugit. Adipisci eligendi inventore quisquam odio aut optio ad nam facilis
-                vitae omnis, itaque porro deserunt sint perferendis quae consequatur. Odio libero officia eaque
-                recusandae ad rem pariatur provident minima enim ea atque, dolore, impedit unde quidem delectus labore
-                voluptatum porro incidunt veniam? Nam libero necessitatibus ratione harum delectus? Culpa repudiandae id
-
-
-                <!-- <p>Here are a few technologies I’ve been working with recently:</p>
-                <div class="grid grid-cols-3 pt-4">
-                    <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">Python</p>
-                    <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">Django</p>
-                    <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">JavaScript (ES6+)</p>
-                    <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">React</p>
-                    <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">Node.js</p>
-                    <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">Wordpress</p>
-                </div> -->
+            <div
+                class="flex-grow max-w-2xl text-xs font-normal leading-10 text-justify text-gray-300 sm:text-lg md:text-xl">
+                <p class="">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ad aliquam dicta exercitationem
+                    placeat hic perferendis odit temporibus dolorum cum, excepturi at sint laborum beatae, libero
+                    aspernatur quia aperiam. Enim?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque sapiente voluptate ipsam culpa
+                    eveniet, ab placeat eaque iure quaerat similique, est facilis dolorem dolores perferendis recusandae
+                    dicta voluptas? Impedit, laboriosam?
+                </p>
+                <br>
+                <p> odit temporibus dolorum cum, excepturi at sint laborum beatae, libero
+                    aspernatur quia aperiam. Enim?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque sapiente voluptate ipsam culpa
+                    eveniet, ab placeat eaque iure quaerat similique, est facilis dolorem dolores perferendis recusandae
+                    dicta voluptas? Impedit, laboriosam?
+                </p>
+                <br>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ducimus culpa minus
+                    aspernatur nobis quibusdam, voluptates quo tempore consectetur quae libero asperiores nemo quidem
+                    doloremque delectus suscipit corporis facere dolores.
+                </p>
             </div>
         </section>
 
         <!-- Skills -->
-        <section id="skills" class="flex flex-col h-screen px-8 pt-10 pb-12 sm:flex-row sm:justify-between">
+        <section id="skills" class="flex flex-col gap-6 scroll-m-20 sm:flex-row sm:justify-between">
             <h2
-                class="text-4xl pb-10 flex-shrink-0 font-bold  text-center capitalize before:content-['02.'] before:text-indigo-500 before:-mr-2 text-gray-300   font-mono mr-3 ">
+                class="text-5xl pb-10 flex-shrink-0 font-bold  text-center capitalize before:content-['02.'] before:text-indigo-500 before:text-3xl before:-mr-6 text-gray-300 font-mono">
                 Skills
             </h2>
-            <div class="flex-grow max-w-2xl">
-                <!-- <h2 class="pb-4 text-lg font-semibold tracking-wide text-gray-300 capitalize">
-                    Here are a few technologies I’ve been working with recently
-                    <span class="text-indigo-500">_</span>
-                </h2> -->
-                <div class="flex flex-wrap justify-between">
+            <div class="flex-grow max-w-3xl">
+                <div class="flex flex-col flex-wrap sm:justify-between sm:flex-row sm:gap-x-3 gap-y-3">
                     <div>
-                        <h2 class="text-lg leading-loose tracking-wide ">
-                            Front-end / Back-end Technologies
+                        <h2 class="mb-3 text-xl leading-loose tracking-wide">
+                            <span class="mr-[2px] text-xl">🛠️</span>
+                            Programming Languages / Others
                             <span class="text-indigo-500">_</span>
                         </h2>
-                        <div class="leading-7 text-gray-400">
+                        <div class="grid grid-cols-2 leading-8 text-gray-400">
+                            <div>
+                                <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
+                                    Python
+                                </p>
+                                <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
+                                    JavaScript
+                                </p>
+                                <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
+                                    PHP
+                                </p>
+                                <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
+                                    Java
+                                </p>
+                                <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
+                                    C#
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
+                                    MySQL
+                                </p>
+                                <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
+                                    SQL Serve
+                                </p>
+                                <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
+                                    Git
+                                </p>
+                                <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
+                                    GitHub
+                                </p>
+                                <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
+                                    Ubuntu
+                                </p>
+                                <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
+                                    VS Code
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="mb-3 text-xl leading-loose tracking-wide">
+                            <span class="mr-[2px] text-xl">🖌️</span>Front-end Tech
+                            <span class="text-indigo-500">_</span>
+                        </h2>
+                        <div class="ml-3 leading-8 text-gray-400">
                             <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
                                 HTML 5 & CSS3
                             </p>
@@ -217,6 +268,15 @@
                             <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
                                 Tailwind CSS
                             </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="mb-3 text-xl leading-loose tracking-wide">
+                            <span class="mr-[2px] text-xl">⚙️</span>
+                            Back-end Tech
+                            <span class="text-indigo-500">_</span>
+                        </h2>
+                        <div class="ml-3 leading-8 text-gray-400">
                             <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
                                 Django
                             </p>
@@ -225,59 +285,10 @@
                             </p>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-lg leading-loose tracking-wide ">
-                            Programming Languages
-                            <span class="text-indigo-500">_</span>
-                        </h2>
-                        <div class="leading-7 text-gray-400">
-                            <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
-                                Python
-                            </p>
-                            <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
-                                JavaScript
-                            </p>
-                            <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
-                                PHP
-                            </p>
-                            <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
-                                Java
-                            </p>
-                            <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
-                                C#
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="text-lg leading-loose tracking-wide ">
-                            Others
-                            <span class="text-indigo-500">_</span>
-                        </h2>
-                        <div class="leading-7 text-gray-400">
-                            <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
-                                MySQL
-                            </p>
-                            <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
-                                SQL Serve
-                            </p>
-                            <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
-                                Git
-                            </p>
-                            <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
-                                GitHub
-                            </p>
-                            <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
-                                Ubuntu
-                            </p>
-                            <p class="before:content-['▹'] before:text-indigo-500 before:mr-2">
-                                VS Code
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
-        <section class="flex items-center justify-center w-full h-screen px-10 ">
+        <section class="flex items-center justify-center w-full px-10 ">
 
             <h1 class="text-6xl font-bold shodow md:text-7xl">
                 Under Construction
