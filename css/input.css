@@ -4,6 +4,6 @@
 
 @layer components {
   .used-tech {
-     @apply inline-flex items-center justify-center text-sm font-bold bg-indigo-500 px-2 rounded-lg;
+     @apply inline-flex items-center justify-center text-sm font-bold bg-sky-500 px-2 rounded-lg;
   }
 }
