@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .underline-style {
-     @apply underline  decoration-2 underline-offset-2;
+  .used-tech {
+     @apply inline-flex items-center justify-center text-sm font-bold bg-indigo-500 px-2 rounded-lg;
   }
 }
