@@ -15,6 +15,25 @@
 
 <body class="relative overflow-x-hidden text-white bg-gray-900 selection:bg-sky-300/25">
 
+  <!-- Loader -->
+  <div id="loader" class="h-screen w-full bg-gray-800 flex justify-center items-center fixed inset-0 z-50">
+    <div class="relative flex justify-center items-center animate-bounce">
+      <span class="flex justify-center items-center h-12 w-12">
+        <span class="animate-ping absolute inline-flex  h-full w-full rounded-full bg-sky-500/90"></span>
+        <span class="relative inline-flex rounded-full h-5 w-5 bg-sky-500"></span>
+      </span>
+      <!-- <span class="flex justify-center items-center h-8 w-8"> -->
+      <!--   <span class="animate-ping absolute inline-flex  h-full w-full rounded-full bg-sky-500/90"></span> -->
+      <!--   <span class="relative inline-flex rounded-full h-5 w-5 bg-sky-500"></span> -->
+      <!-- </span> -->
+      <!-- <span class="flex justify-center items-center h-8 w-8"> -->
+      <!--   <span class="animate-ping absolute inline-flex  h-full w-full rounded-full bg-sky-500/90"></span> -->
+      <!--   <span class="relative inline-flex rounded-full h-5 w-5 bg-sky-500"></span> -->
+      <!-- </span> -->
+    </div>
+  </div>
+
+
   <header class="lg:h-[40rem] mx-auto max-w-7xl">
 
     <!-- Navbar -->
@@ -570,13 +589,13 @@
     }
 
 
-    /*
-        document.onreadystatechange = () => {
-          if (document.readyState === "interactive") {
-            newQuote();
-          }
-        };
-    */
+    document.onreadystatechange = () => {
+      //newQuote();
+      if (document.readyState === "complete") {
+        document.getElementById('loader').classList.add('hidden');
+        //console.log("ready");
+      }
+    };
   </script>
 
 </body>
