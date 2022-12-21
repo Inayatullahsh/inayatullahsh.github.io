@@ -63,7 +63,7 @@
                   class="capitalize before:content-['03.'] before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono mx-3 py-2 text-sm font-bold">
                   Projects
                 </a>
-                <a href="#"
+                <a href="#contact"
                   class="capitalize before:content-['04.'] before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono mx-3 py-2 text-sm font-bold">
                   contact
                 </a>
@@ -102,7 +102,7 @@
             aria-current="page">
             Projects
           </a>
-          <a href="#"
+          <a href="#contact"
             class="capitalize before:content-['04.'] block px-3 py-2 text-base font-medium before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono"
             aria-current="page">
             contact
@@ -140,9 +140,8 @@
               onclick="alert('Portfolio is Under Construction!')">
               download resume
             </a>
-            <a href=" #"
-              class="block px-4 py-3 font-mono text-base font-bold text-center text-sky-500 capitalize border border-sky-500 rounded-md sm:inline-block hover:bg-sky-300/25 hover:text-sky-600"
-              onclick="alert('Portfolio is Under Construction!')">
+            <a href=" #contact"
+              class="block px-4 py-3 font-mono text-base font-bold text-center text-sky-500 capitalize border border-sky-500 rounded-md sm:inline-block hover:bg-sky-300/25 hover:text-sky-600">
               contact
             </a>
           </div>
@@ -154,10 +153,17 @@
     </section>
   </header>
 
+  <!-- Under Construction -->
+  <section class="py-14 bg-gray-200 flex  justify-center w-full px-10">
+    <h1 class="text-5xl text-sky-500 font-bold shodow md:text-7xl">
+      Under Construction
+      <span class="-ml-1 text-white transition text-inherit duration-1000 motion-safe:animate-ping">...</span>
+    </h1>
+  </section>
 
   <!-- About Section -->
   <section id="about" class="">
-    <div class="container px-6 py-10 mx-auto pb-8 max-w-7xl md:px-20 scroll-m-20">
+    <div class="container px-6 py-10 mx-auto pb-8 max-w-7xl md:px-20 scroll-m-4 md:scroll-m-20">
       <h2
         class="text-3xl md:text-4xl lg:pb-4 font-bold capitalize text-center md:text-left before:content-['01.'] before:text-sky-500 before:text-3xl before:-mr-4 text-gray-300 font-mono">
         About
@@ -456,27 +462,38 @@
 
   <!-- contact -->
   <section id="contact" class="">
-    <div class="container px-6 pt-28 pb-10 mx-auto max-w-7xl md:px-20 scroll-m-20">
+    <div class="container px-6 pt-24 pb-6 mx-auto max-w-7xl md:px-20 scroll-m-20 overflow-hidden">
       <h2
-        class="text-3xl md:text-4xl pb-10 lg:pb-4 font-bold capitalize text-center before:content-['04.'] before:text-sky-500 before:text-3xl before:-mr-4 text-gray-300 font-mono">
+        class="text-3xl md:text-4xl pb-10 font-bold capitalize text-center before:content-['04.'] before:text-sky-500 before:text-3xl before:-mr-4 text-gray-300 font-mono">
         Contact
       </h2>
 
-      <div class="max-w-2xl mx-auto px-8 flex flex-col gap-y-8">
-        <div class="flex gap-y-6 flex-col  text-center justify-center">
-          <h5 class="text-2xl sm:text-3xl text-white font-semibold underline">Inayatullahoffical@gmail.com</h5>
+      <div class="max-w-2xl mx-auto px-2 sm:px-8 flex flex-col gap-y-8">
+        <div class="flex gap-y-10 flex-col text-center items-center justify-center">
+          <a href="mailto:Inayatullahoffical@gmail.com" class="text-2xl sm:text-3xl text-white font-semibold underline"
+            rel="noopener noreferrer" target="_blank">
+            Inayatullahoffical@gmail.com
+          </a>
           <h5 class="text-2xl sm:text-3xl text-white font-semibold underline">+93(0) 787788811</h5>
           <div class="mt-3">
-            <a href=""
+            <button onclick="newQuote()"
               class="max-w-[25rem] mx-auto block px-4 py-3 font-mono text-base font-bold text-center text-sky-500 capitalize border border-sky-500 rounded-md sm:inline-block hover:bg-sky-300/25 hover:text-sky-600 focus:bg-sky-300/20">
               Get a quote
-            </a>
+            </button>
+            <p id="quoteWrapper" class="pt-4 hidden text-sky-500 font-normal text-base">
+              <span class="text-3xl font-semibold text-sky-500">“</span>
+              <span id="quote">
+              </span>
+              <span class="text-3xl font-semibold text-blue-500">”</span>
+            </p>
           </div>
         </div>
-        <div class="flex justify-around border-t border-t-gray-500 pt-8">
-          <a href="" rel="noopener noreferrer" target="_blank">
+
+        <div class="flex justify-around border-t border-t-gray-600 pt-8">
+          <a href="https://github.com/Inayatullahsh" class="bg-gray-800 px-2 py-2 rounded-full group"
+            rel="noopener noreferrer" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" role="img"
-              class="w-10 h-10 stroke-gray-200 bg-gray-800 px-1 py-1 rounded-full" viewBox="0 0 24 24" fill="none"
+              class="w-5 h-5 stroke-gray-200 group-hover:stroke-gray-100" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <title>GitHub</title>
               <path
@@ -484,54 +501,83 @@
               </path>
             </svg>
           </a>
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-gray-200" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-twitter">
-            <path
-              d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-            </path>
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-gray-200" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-facebook">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-gray-200" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-instagram">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-gray-200" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-linkedin">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-            <rect x="2" y="9" width="4" height="12"></rect>
-            <circle cx="4" cy="4" r="2"></circle>
-          </svg>
+
+          <a href="https://twitter.com/IUShinwari " class="bg-gray-800 px-2 py-2 rounded-full group"
+            rel="noopener noreferrer" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 stroke-gray-200 group-hover:stroke-gray-100"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <title>Twitter</title>
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100050628697679"
+            class="bg-gray-800 px-2 py-2 rounded-full group" rel="noopener noreferrer" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 stroke-gray-200 group-hover:stroke-gray-100"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <title>Facebook</title>
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/meinayatullah/" class="bg-gray-800 px-2 py-2 rounded-full group"
+            rel="noopener noreferrer" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 stroke-gray-200 group-hover:stroke-gray-100"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <title>Instagram</title>
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/inayatullah-shinwari-9ba0511bb/"
+            class="bg-gray-800 px-2 py-2 rounded-full group" rel="noopener noreferrer" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 stroke-gray-200 group-hover:stroke-gray-100"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <title>Linkedin</title>
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- <section class="py-14 flex  justify-center w-full px-10"> -->
-  <!--   <h1 class="text-6xl font-bold shodow md:text-7xl"> -->
-  <!--     Under Construction -->
-  <!--     <span class="-ml-1 text-white transition duration-1000 motion-safe:animate-ping">...</span> -->
-  <!--     🛠️ -->
-  <!--   </h1> -->
-  <!-- </section> -->
 
-  <!-- <script> -->
-  <!--   fetch("https://type.fit/api/quotes") -->
-  <!--     .then(function (response) { -->
-  <!--       return response.json(); -->
-  <!--     }) -->
-  <!--     .then(function (data) { -->
-  <!--       console.log(data); -->
-  <!--     }); -->
-  <!-- </script> -->
+  <script>
+    const quotes = [
+      `The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela`,
+      `The way to get started is to quit talking and begin doing. -Walt Disney`,
+      `Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. -Steve Jobs`,
+      `If life were predictable it would cease to be life, and be without flavor. -Eleanor Roosevelt`,
+      `If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough. -Oprah Winfrey`,
+      `If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success. -James Cameron`,
+      `Life is what happens when you're busy making other plans. -John Lennon`,
+    ]
+
+
+    function newQuote() {
+      var randomNumber = Math.floor(Math.random() * (quotes.length));
+      //console.log(randomNumber);
+      document.getElementById('quoteWrapper').classList.remove('hidden');
+      document.getElementById('quote').innerHTML = quotes[randomNumber];
+    }
+
+
+    /*
+        document.onreadystatechange = () => {
+          if (document.readyState === "interactive") {
+            newQuote();
+          }
+        };
+    */
+  </script>
 
 </body>
 
