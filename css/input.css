@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  .sticky {
+    @apply fixed top-0 left-0 right-0 shadow-xl;
+  }
   .used-tech {
      @apply inline-flex items-center justify-center text-sm font-bold bg-sky-500 px-2 rounded-lg;
   }

@@ -585,6 +585,16 @@ video {
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .used-tech {
   display: inline-flex;
   align-items: center;
@@ -623,6 +633,11 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .inset-0 {
   top: 0px;
   right: 0px;
@@ -643,12 +658,16 @@ video {
   right: 0px;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .z-50 {
   z-index: 50;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-auto {
@@ -725,8 +744,8 @@ video {
   height: 100vh;
 }
 
-.h-8 {
-  height: 2rem;
+.h-12 {
+  height: 3rem;
 }
 
 .h-full {
@@ -735,6 +754,10 @@ video {
 
 .h-5 {
   height: 1.25rem;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .h-16 {
@@ -749,28 +772,24 @@ video {
   height: 24rem;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
 .min-h-\[18rem\] {
   min-height: 18rem;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .w-full {
   width: 100%;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .w-5 {
   width: 1.25rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-6 {
@@ -781,28 +800,8 @@ video {
   width: auto;
 }
 
-.w-52 {
-  width: 13rem;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
 .max-w-7xl {
   max-width: 80rem;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .max-w-2xl {
@@ -835,6 +834,10 @@ video {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @-webkit-keyframes bounce {
@@ -1083,11 +1086,6 @@ video {
   padding-right: 0.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1106,6 +1104,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .px-4 {
@@ -1395,6 +1398,10 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .ease-in-out {
@@ -1801,4 +1808,3 @@ video {
     padding-bottom: 1rem;
   }
 }
-

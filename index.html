@@ -34,103 +34,103 @@
   </div>
 
 
+
+  <!-- Navbar -->
+  <nav id="navbar" class="bg-gray-900 z-40" x-data="{ open: false }">
+    <div class="max-w-7xl px-2 py-2 mx-auto sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button"
+            class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false" x-on:click="open = !open">
+            <span class="sr-only">Open main menu</span>
+            <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
+          <!-- Logo -->
+          <div class="flex items-center flex-shrink-0">
+            <img class="block w-auto h-8 lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=500"
+              alt="Your Company" />
+            <img class="hidden w-auto h-8 lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=500"
+              alt="Your Company" />
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <!-- Nav tabs-->
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#about"
+                class="capitalize before:content-['01.'] before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono mr-3 py-2 text-sm font-bold">
+                About
+              </a>
+              <a href="#skills"
+                class="capitalize before:content-['02.'] before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono mx-3 py-2 text-sm font-bold">
+                Skills
+              </a>
+              <a href="#projects"
+                class="capitalize before:content-['03.'] before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono mx-3 py-2 text-sm font-bold">
+                Projects
+              </a>
+              <a href="#contact"
+                class="capitalize before:content-['04.'] before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono mx-3 py-2 text-sm font-bold">
+                contact
+              </a>
+            </div>
+          </div>
+          <!-- Profile dropdown -->
+          <div class="relative ml-3">
+            <div>
+              <a href="./media/Inayatullah-shinwari-CV-Nangarhar.pdf"
+                class="px-3 py-2 font-mono text-sm font-bold text-sky-500 capitalize border border-sky-500 rounded-md hover:bg-sky-300/25 hover:text-sky-600"
+                download="proposed_file_name">
+                resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="bg-gray-900 shadow-lg" id="mobile-menu" x-show="open" @click.outside="open = false">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#about"
+          class="capitalize  before:content-['01.'] block px-3 py-2 text-base font-medium before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500  font-mono"
+          aria-current="page">
+          About
+        </a>
+        <a href="#skills"
+          class="capitalize before:content-['02.'] block px-3 py-2 text-base font-medium before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono"
+          aria-current="page">
+          Skills
+        </a>
+        <a href="#projects"
+          class="capitalize before:content-['03.'] block px-3 py-2 text-base font-medium before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono"
+          aria-current="page">
+          Projects
+        </a>
+        <a href="#contact"
+          class="capitalize before:content-['04.'] block px-3 py-2 text-base font-medium before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono"
+          aria-current="page">
+          contact
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
   <header class="lg:h-[40rem] mx-auto max-w-7xl">
-
-    <!-- Navbar -->
-    <nav class="bg-gray-900" x-data="{ open: false }">
-      <div class="max-w-full px-2 py-4 mx-auto sm:px-6 lg:px-8">
-        <div class="relative flex items-center justify-between h-16">
-          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <!-- Mobile menu button-->
-            <button type="button"
-              class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-              aria-controls="mobile-menu" aria-expanded="false" x-on:click="open = !open">
-              <span class="sr-only">Open main menu</span>
-              <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
-            <!-- Logo -->
-            <div class="flex items-center flex-shrink-0">
-              <img class="block w-auto h-8 lg:hidden"
-                src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=500" alt="Your Company" />
-              <img class="hidden w-auto h-8 lg:block"
-                src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=500" alt="Your Company" />
-            </div>
-          </div>
-          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <!-- Nav tabs-->
-            <div class="hidden sm:ml-6 sm:block">
-              <div class="flex">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#about"
-                  class="capitalize before:content-['01.'] before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono mr-3 py-2 text-sm font-bold">
-                  About
-                </a>
-                <a href="#skills"
-                  class="capitalize before:content-['02.'] before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono mx-3 py-2 text-sm font-bold">
-                  Skills
-                </a>
-                <a href="#projects"
-                  class="capitalize before:content-['03.'] before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono mx-3 py-2 text-sm font-bold">
-                  Projects
-                </a>
-                <a href="#contact"
-                  class="capitalize before:content-['04.'] before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono mx-3 py-2 text-sm font-bold">
-                  contact
-                </a>
-              </div>
-            </div>
-            <!-- Profile dropdown -->
-            <div class="relative ml-3">
-              <div>
-                <a href="./media/Inayatullah-shinwari-CV-Nangarhar.pdf"
-                  class="px-3 py-2 font-mono text-sm font-bold text-sky-500 capitalize border border-sky-500 rounded-md hover:bg-sky-300/25 hover:text-sky-600"
-                  download="proposed_file_name">
-                  resume
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile menu, show/hide based on menu state. -->
-      <div class="bg-gray-900 shadow-lg" id="mobile-menu" x-show="open" @click.outside="open = false">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <a href="#about"
-            class="capitalize  before:content-['01.'] block px-3 py-2 text-base font-medium before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500  font-mono"
-            aria-current="page">
-            About
-          </a>
-          <a href="#skills"
-            class="capitalize before:content-['02.'] block px-3 py-2 text-base font-medium before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono"
-            aria-current="page">
-            Skills
-          </a>
-          <a href="#projects"
-            class="capitalize before:content-['03.'] block px-3 py-2 text-base font-medium before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono"
-            aria-current="page">
-            Projects
-          </a>
-          <a href="#contact"
-            class="capitalize before:content-['04.'] block px-3 py-2 text-base font-medium before:text-sky-500 before:-mr-2 text-gray-300 hover:text-sky-500 font-mono"
-            aria-current="page">
-            contact
-          </a>
-        </div>
-      </div>
-    </nav>
-
-
     <!-- hero -->
     <section class="">
       <div class="container px-6 py-6 md:py-10 mx-auto pb-8 max-w-7xl md:px-20">
@@ -596,6 +596,23 @@
         //console.log("ready");
       }
     };
+
+    window.onscroll = function (e) {
+      // print "false" if direction is down and "true" if up
+      const navbar = document.getElementById("navbar");
+      if (this.oldScroll > this.scrollY && this.scrollY > 0) {
+        //if(!navbar.classList.contains("sticky")){
+        navbar.classList.add("sticky");
+        console.log(this.scrollY)
+        //}
+      } else {
+        if (navbar.classList.contains("sticky")) {
+          navbar.classList.remove("sticky");
+        }
+      }
+      console.log(this.oldScroll > this.scrollY);
+      this.oldScroll = this.scrollY;
+    }
   </script>
 
 </body>
