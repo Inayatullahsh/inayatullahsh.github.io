@@ -4,9 +4,20 @@
 
 @layer components {
   .sticky {
-    @apply fixed top-0 left-0 right-0 shadow-xl;
+    @apply fixed top-0 left-0 right-0 shadow-xl transition duration-300 ease-in-out;
   }
   .used-tech {
      @apply inline-flex items-center justify-center text-sm font-bold bg-sky-500 px-2 rounded-lg;
   }
 }
+
+
+/* @layer utilities { */
+/*   .sticky { */
+/*     position: fixed; */
+/*     top: 0; */
+/*     left: 0; */
+/*     right: 0; */
+/*     transition: top 1000ms ease; */
+/*   } */
+/* } */
