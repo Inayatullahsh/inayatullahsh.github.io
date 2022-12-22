@@ -9,3 +9,4 @@
 6. [x] A Projects/work section that showcases 3-5 of your best projects
 7. [x] A contact section with a email, mobile number, get a quote and social media links.
 8. [ ] Use Inter or other awesome font family.
+9. [] Change card design.

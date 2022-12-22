@@ -4,13 +4,12 @@
 
 @layer components {
   .sticky {
-    @apply fixed top-0 left-0 right-0 shadow-xl transition duration-300 ease-in-out;
+    @apply fixed top-0 left-0 right-0 transition duration-300 ease-in-out shadow-xl;
   }
   .used-tech {
-     @apply inline-flex items-center justify-center text-sm font-bold bg-sky-500 px-2 rounded-lg;
+    @apply inline-flex items-center justify-center px-[4px] py-[2px] text-xs font-medium rounded-lg bg-sky-500;
   }
 }
-
 
 /* @layer utilities { */
 /*   .sticky { */
