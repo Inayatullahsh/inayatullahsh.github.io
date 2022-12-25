@@ -10,3 +10,10 @@
    1. [x] Change card design.
 7. [x] A contact section with a email, mobile number, get a quote and social media links.
 8. [ ] Use Inter or other awesome font family.
+
+-------------
+
+1. [x] hide small screen menu by default
+2. [ ] Add same style to related buttons
+3. [ ] fix margin/padding issue between sections and within each section
+4. [ ] Add content

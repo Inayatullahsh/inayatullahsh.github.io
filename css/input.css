@@ -6,9 +6,64 @@
   .sticky {
     @apply fixed top-0 left-0 right-0 transition duration-300 ease-in-out shadow-xl;
   }
+  .navbar-link {
+    @apply py-2 mr-5 font-mono text-sm font-bold text-gray-300 capitalize before:text-sky-500 before:-mr-2 hover:text-sky-500;
+  }
+  .navbar-menu-link {
+    @apply block px-3 py-2 font-mono text-base font-medium text-gray-300 capitalize before:text-sky-500 before:-mr-2 hover:text-sky-500;
+  }
   .used-tech {
     @apply inline-flex items-center justify-center px-[4px] py-[2px] text-xs font-medium rounded-lg bg-sky-500;
   }
+  .skills-tech {
+    @apply before:content-['▹'] before:text-sky-500 before:mr-2;
+  }
+  .btn-primary {
+    @apply font-mono text-base font-bold text-center text-white capitalize transition duration-300 rounded-md bg-sky-600 hover:bg-sky-700 focus:bg-sky-700/90;
+  }
+  .btn-secondary {
+    @apply font-mono font-bold text-center capitalize transition duration-300 border rounded-md text-sky-500 border-sky-500 hover:bg-sky-300/25 focus:bg-sky-300/20;
+  }
+  .social-media-icon-link {
+    @apply px-2 py-2 bg-gray-800 rounded-full;
+  }
+  .social-media-icon {
+    @apply w-5 h-5 stroke-gray-200;
+  }
+
+  /* .card {
+    @apply relative flex flex-col items-center max-w-5xl overflow-hidden rounded-lg md:mx-2 md:flex-row md:shadow-xl md:h-auto md:max-h-96;
+  }
+  .img-wrapper {
+    @apply relative z-0 order-1 w-full overflow-hidden rounded-lg md:order-2 md:w-2/5 h-96 md:h-full md:rounded-none md:rounded-r-lg;
+  }
+  .bg-img {
+    @apply absolute inset-0 object-fill object-center w-full h-full bg-top bg-cover bg-sky-400 bg-opacity-30;
+  }
+  .img_card-title-wrapper {
+    @apply absolute inset-0 flex items-end justify-start h-full p-6 pb-8 md:hidden bg-gradient-to-b from-transparent via-transparent to-gray-900;
+  }
+  .img_card-title {
+    @apply w-full mb-2 text-2xl font-bold leading-tight text-white;
+  }
+  .card-plygon {
+    @apply absolute inset-y-0 hidden w-24 h-full -ml-12 fill-gray-800 md:block;
+  }
+  .card-title-wrapper {
+    @apply p-8 mx-2 bg-gray-800 rounded-lg shadow-xl md:h-full md:pl-14 md:py-12 md:mx-0 md:rounded-none md:rounded-l-lg md:shadow-none;
+  }
+  .card-title {
+    @apply hidden pb-4 text-2xl font-bold leading-10 text-white md:block;
+  }
+  .card-tech-wrapper {
+    @apply flex flex-wrap pt-6 pb-4 font-mono gap-x-4 gap-y-3;
+  }
+  .card-links-wrapper {
+    @apply flex pl-1 gap-x-3;
+  }
+  .card-link {
+    @apply w-5 h-5 stroke-gray-200;
+  } */
 }
 
 /* @layer utilities { */
