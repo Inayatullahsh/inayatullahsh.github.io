@@ -983,18 +983,6 @@ video {
   height: 0.75rem;
 }
 
-.h-auto {
-  height: auto;
-}
-
-.h-72 {
-  height: 18rem;
-}
-
-.h-80 {
-  height: 20rem;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1328,14 +1316,6 @@ video {
   background-position: top;
 }
 
-.bg-center {
-  background-position: center;
-}
-
-.bg-left {
-  background-position: left;
-}
-
 .fill-gray-800 {
   fill: #1f2937;
 }
@@ -1353,19 +1333,9 @@ video {
      object-fit: cover;
 }
 
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
 .object-top {
   -o-object-position: top;
      object-position: top;
-}
-
-.object-center {
-  -o-object-position: center;
-     object-position: center;
 }
 
 .p-2 {
@@ -1404,9 +1374,9 @@ video {
   padding-right: 0.75rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-6 {
@@ -1419,19 +1389,9 @@ video {
   padding-right: 0.25rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pr-2 {
@@ -1696,10 +1656,6 @@ video {
 
 .opacity-90 {
   opacity: 0.9;
-}
-
-.mix-blend-multiply {
-  mix-blend-mode: multiply;
 }
 
 .shadow-lg {
@@ -2075,10 +2031,6 @@ video {
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .sm\:bg-top {
-    background-position: top;
-  }
-
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -2203,16 +2155,17 @@ video {
     background-position: right;
   }
 
-  .md\:bg-left {
-    background-position: left;
-  }
-
   .md\:bg-center {
     background-position: center;
   }
 
   .md\:p-8 {
     padding: 2rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .md\:py-10 {
@@ -2228,16 +2181,6 @@ video {
   .md\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-
-  .md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .md\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 
   .md\:pt-0 {
