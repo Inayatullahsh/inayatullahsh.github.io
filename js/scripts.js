@@ -26,15 +26,18 @@ document.onreadystatechange = () => {
     //console.log("ready");
   }
 
+  const navbar = document.getElementById("navbar");
+  if (this.scrollY > 400) {
+    navbar.classList.add("sticky-nav");
+  }
   window.onscroll = (e) => {
-    const navbar = document.getElementById("navbar");
 
     if (this.scrollY > 400) {
-      navbar.classList.add("sticky");
+      navbar.classList.add("sticky-nav");
       //console.table(this.oldScroll, this.scrollY);
     } else {
-      if (navbar.classList.contains("sticky")) {
-        navbar.classList.remove("sticky");
+      if (navbar.classList.contains("sticky-nav")) {
+        navbar.classList.remove("sticky-nav");
       }
     }
     this.oldScroll = this.scrollY;

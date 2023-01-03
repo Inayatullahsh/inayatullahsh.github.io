@@ -585,6 +585,12 @@ video {
   }
 }
 
+/* .sticky { */
+
+/*   @apply fixed top-0 left-0 right-0 transition duration-300 ease-in-out shadow-xl; */
+
+/* } */
+
 .navbar-link {
   margin-right: 1.25rem;
   padding-top: 0.5rem;
@@ -787,6 +793,11 @@ video {
 
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .inset-0 {
@@ -1107,12 +1118,40 @@ video {
   cursor: pointer;
 }
 
-.scroll-m-10 {
-  scroll-margin: 2.5rem;
+.scroll-m-24 {
+  scroll-margin: 6rem;
 }
 
 .-scroll-m-8 {
   scroll-margin: -2rem;
+}
+
+.scroll-m-32 {
+  scroll-margin: 8rem;
+}
+
+.-scroll-m-32 {
+  scroll-margin: -8rem;
+}
+
+.scroll-m-44 {
+  scroll-margin: 11rem;
+}
+
+.scroll-m-36 {
+  scroll-margin: 9rem;
+}
+
+.scroll-m-40 {
+  scroll-margin: 10rem;
+}
+
+.scroll-m-8 {
+  scroll-margin: 2rem;
+}
+
+.scroll-m-28 {
+  scroll-margin: 7rem;
 }
 
 .grid-cols-1 {
@@ -1365,19 +1404,29 @@ video {
   padding-right: 0.5rem;
 }
 
+.px-\[12px\] {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.py-\[8px\] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .px-1 {

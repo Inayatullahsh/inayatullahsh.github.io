@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer components {
-  .sticky {
-    @apply fixed top-0 left-0 right-0 transition duration-300 ease-in-out shadow-xl;
-  }
+  /* .sticky { */
+  /*   @apply fixed top-0 left-0 right-0 transition duration-300 ease-in-out shadow-xl; */
+  /* } */
   .navbar-link {
     @apply py-2 mr-5 font-mono text-sm font-bold text-gray-300 capitalize before:text-sky-500 before:-mr-2 hover:text-sky-500;
   }

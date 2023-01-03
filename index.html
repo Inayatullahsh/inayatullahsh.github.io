@@ -16,6 +16,17 @@
   <link rel="stylesheet" href="./css/output.css" />
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <title>Inayatullah's Portfolio</title>
+  <style>
+    .sticky-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+      --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+  </style>
 </head>
 
 <body class="relative overflow-x-hidden font-sans text-white bg-gray-900 selection:bg-sky-500/30">
@@ -96,7 +107,7 @@
           <div class="relative ml-4">
             <div>
               <a href="./media/Inayatullah-shinwari-CV.pdf"
-                class="px-4 py-3 text-sm transition duration-200 ease-in btn-secondary"
+                class="px-[12px] py-[8px] text-sm transition duration-200 ease-in btn-secondary"
                 download="InayatUllah-Shinwari-CV">
                 resume
               </a>
@@ -171,7 +182,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="max-w-5xl pb-20 mx-auto pt-28 md:pt-0 scroll-m-10 px-4 md:px-8">
+    <section id="about" class="max-w-5xl pb-20 mx-auto pt-28 md:pt-0 scroll-m-44 px-4 md:px-8">
       <div class="">
         <h2
           class="text-2xl md:text-3xl pb-10 font-bold font-mono capitalize text-center lg:text-left before:content-['01.'] before:text-sky-500 before:text-2xl before:-mr-4 text-gray-300">
@@ -277,7 +288,7 @@
     </section> -->
 
     <!-- Skills -->
-    <section id="skills" class="max-w-5xl pt-24 pb-24 mx-auto px-4 md:px-8 -scroll-m-8">
+    <section id="skills" class="max-w-5xl pt-24 pb-24 mx-auto px-4 md:px-8 scroll-m-24">
       <div class="">
         <h2
           class="text-2xl md:text-3xl pb-10 font-bold font-mono capitalize text-center lg:text-left before:content-['02.'] before:text-sky-500 before:text-2xl before:-mr-4 text-gray-300">
@@ -337,7 +348,7 @@
                   Ajax
                 </p>
                 <p class="skills-tech">
-                  AlphinJS
+                  AlphineJS
                 </p>
               </div>
             </div>
@@ -398,7 +409,7 @@
     </section>
 
     <!-- projects -->
-    <section id="projects" class="max-w-5xl pt-20 pb-20 mx-auto -scroll-m-8 sm:px-6 ">
+    <section id="projects" class="max-w-5xl pt-20 pb-20 mx-auto scroll-m-24 sm:px-6 ">
       <div class="">
         <h2
           class="text-2xl md:text-3xl pb-10 md:pb-14 font-bold font-mono capitalize text-center lg:text-left before:content-['03.'] before:text-sky-500 before:text-2xl before:-mr-4 text-gray-300">
