@@ -513,6 +513,30 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+/* Firefox */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0284c7 #111827;
+}
+
+/* Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #111827;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0284c7;
+  border-radius: 14px;
+  border: 3px solid #0284c7;
+}
+
 .container {
   width: 100%;
 }
@@ -1267,6 +1291,10 @@ video {
   stroke: #e5e7eb;
 }
 
+.stroke-sky-500 {
+  stroke: #0ea5e9;
+}
+
 .stroke-sky-600 {
   stroke: #0284c7;
 }
@@ -1377,6 +1405,10 @@ video {
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pt-2 {
@@ -1812,6 +1844,11 @@ video {
 .focus\:ring-white:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+}
+
+.group:hover .group-hover\:translate-x-2 {
+  --tw-translate-x: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:stroke-gray-100 {
