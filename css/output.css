@@ -1623,6 +1623,10 @@ video {
   text-decoration-color: #0ea5e9;
 }
 
+.decoration-emerald-600 {
+  text-decoration-color: #059669;
+}
+
 .decoration-2 {
   text-decoration-thickness: 2px;
 }
