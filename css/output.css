@@ -1599,6 +1599,10 @@ video {
   text-decoration-color: #3b82f6;
 }
 
+.decoration-emerald-600 {
+  text-decoration-color: #059669;
+}
+
 .decoration-green-500 {
   text-decoration-color: #22c55e;
 }
@@ -1621,10 +1625,6 @@ video {
 
 .decoration-sky-500 {
   text-decoration-color: #0ea5e9;
-}
-
-.decoration-emerald-600 {
-  text-decoration-color: #059669;
 }
 
 .decoration-2 {
